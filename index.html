@@ -30,6 +30,14 @@
 </head>
 <body>
   <h1>Error Bot'a Hoş Geldiniz!</h1>
-  <button onclick="alert('Merhaba! Ben Error Bot!')">Error Bot ile Konuş</button>
+  <button onclick="startConversation()">Error Bot ile Konuş</button>
+
+  <script>
+    function startConversation() {
+      // Butona tıklandığında mesaj göster
+      document.body.innerHTML += '<p>Merhaba, ben Error Bot!</p>';
+      document.body.innerHTML += '<p>Ne yapmak istersin?</p>';
+    }
+  </script>
 </body>
 </html>
